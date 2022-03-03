@@ -46,6 +46,12 @@ p {
     width: 98%;
 }
 
+a {
+    line-height: 32px;
+    color: black;
+    text-decoration: none;
+}
+
 button,
 input {
     border-style: none;
@@ -60,6 +66,10 @@ input {
 
 button {
     font-weight: 600;
+}
+
+::selection {
+    background-color: #adadad;
 }
 
 .nav-bar {
@@ -120,7 +130,7 @@ button {
 
 .brand {
     margin-top: 60px;
-    margin-top: 10%;
+    margin-top: 15%;
     width: 95%;
 }
 
@@ -223,6 +233,8 @@ button {
 
 .feature-element {
     margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
@@ -255,12 +267,10 @@ iframe {
 
 .benefit-detail>p {
     margin: 20px auto;
-    width: 70%;
 }
 
 form {
     margin-top: 40px;
-    margin-bottom: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -328,7 +338,7 @@ form>button {
         height: initial;
     }
     .intro-content {
-        width: 70%;
+        width: 500px;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
@@ -353,7 +363,7 @@ form>button {
         flex-direction: column;
     }
     .feature>p {
-        width: 60%;
+        width: 500px;
     }
     .feature-list {
         display: grid;
@@ -369,6 +379,9 @@ form>button {
     .benefit {
         width: 85%;
     }
+    .benefit-detail>p {
+        width: 400px;
+    }
     form {
         flex-flow: row nowrap;
         justify-content: center;
@@ -379,5 +392,86 @@ form>button {
     form>button {
         width: 30%;
         margin-left: -10%;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1100px) {
+    .intro-content>h1 {
+        width: 400px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .nav-link {
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .intro {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .intro>img {
+        align-self: stretch;
+        width: 40vw;
+        display: initial;
+        object-fit: cover;
+        border-radius: 60px;
+    }
+    .intro-content {
+        margin-left: 0;
+        margin-right: 0;
+        width: 45%;
+        align-items: start;
+        text-align: start;
+    }
+    .brand {
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .brand>h3 {
+        width: 200px;
+    }
+    .brand-list {
+        margin: 0 0;
+        width: 70%;
+    }
+    .feature-list {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        column-gap: 3%;
+    }
+    .benefit {
+        margin-top: 15%;
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    iframe {
+        width: 40vw;
+        height: 300px;
+    }
+    .benefit-detail {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: start;
+        margin: 0 0 0 2%;
+    }
+    .benefit-detail>p {
+        margin-left: 0%;
+    }
+    form {
+        margin-top: 2%;
+        width: 100%;
+    }
+    form>input {
+        width: 80%;
+    }
+    form>button {
+        width: 45%;
     }
 }
