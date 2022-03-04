@@ -534,6 +534,7 @@ form>button:hover {
     }
     .benefit {
         margin-top: 160px;
+        margin-bottom: 80px;
         display: flex;
         width: 100%;
         justify-content: space-evenly;
