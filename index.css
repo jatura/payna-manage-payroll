@@ -50,6 +50,24 @@ a {
     line-height: 32px;
     color: black;
     text-decoration: none;
+    position: relative;
+}
+
+a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 110%;
+    height: 2px;
+    bottom: 0;
+    left: -5%;
+    background-color: #adadad;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+a:hover::before {
+    transform: scaleX(1);
 }
 
 button,
@@ -62,6 +80,10 @@ input {
 
 input {
     font-weight: 400;
+}
+
+input:focus {
+    outline: none;
 }
 
 button {
@@ -122,6 +144,10 @@ button {
     width: 12em;
     background-color: #1F7CFF;
     color: white;
+}
+
+.intro-content>button:hover {
+    background-color: #006aff;
 }
 
 .intro>img {
@@ -294,6 +320,10 @@ form>button {
     color: white;
 }
 
+form>button:hover {
+    background-color: #006aff;
+}
+
 @media only screen and (max-width: 300px) {
     * {
         font-size: 14px;
@@ -309,7 +339,6 @@ form>button {
     }
     h4 {
         font-size: 18px;
-        color: cadetblue;
     }
 }
 
@@ -329,6 +358,14 @@ form>button {
     .nav-bar {
         display: flex;
         justify-content: space-between;
+        position: fixed;
+        top: 0;
+        left: 2%;
+        right: 2%;
+        padding: 2%;
+        background-color: rgba(255, 255, 255, 0.932);
+        z-index: 2;
+        border-radius: 50px;
     }
     .sign-in {
         font-weight: 400;
@@ -336,6 +373,12 @@ form>button {
         background-color: #F5F6FB;
         width: 9em;
         height: initial;
+    }
+    .sign-in:hover {
+        background-color: rgb(239, 240, 245);
+    }
+    .intro {
+        margin-top: 10%;
     }
     .intro-content {
         width: 500px;
@@ -374,7 +417,27 @@ form>button {
     }
     .feature-element {
         margin-top: 50px !important;
-        width: 95%;
+        width: 98%;
+    }
+    .feature-element:nth-child(2) {
+        grid-row: 2;
+        grid-column: 1;
+    }
+    .feature-element:nth-child(3) {
+        grid-row: 3;
+        grid-column: 1;
+    }
+    .feature-element:nth-child(4) {
+        grid-row: 1;
+        grid-column: 2;
+    }
+    .feature-element:nth-child(5) {
+        grid-row: 2;
+        grid-column: 2;
+    }
+    .feature-element:nth-child(6) {
+        grid-row: 3;
+        grid-column: 2;
     }
     .benefit {
         width: 85%;
@@ -391,7 +454,7 @@ form>button {
     }
     form>button {
         width: 30%;
-        margin-left: -10%;
+        margin-left: -15%;
     }
 }
 
@@ -409,6 +472,7 @@ form>button {
         justify-content: space-between;
     }
     .intro {
+        margin-top: 3%;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
@@ -428,8 +492,9 @@ form>button {
         text-align: start;
     }
     .brand {
+        margin-top: 6%;
         flex-flow: row nowrap;
-        align-items: center;
+        align-items: start;
         justify-content: space-between;
     }
     .brand>h3 {
@@ -438,11 +503,32 @@ form>button {
     .brand-list {
         margin: 0 0;
         width: 70%;
+        flex-flow: row nowrap;
     }
     .feature-list {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
         column-gap: 3%;
+    }
+    .feature-element:nth-child(2) {
+        grid-row: 1;
+        grid-column: 3;
+    }
+    .feature-element:nth-child(3) {
+        grid-row: 2;
+        grid-column: 1;
+    }
+    .feature-element:nth-child(4) {
+        grid-row: 1;
+        grid-column: 2;
+    }
+    .feature-element:nth-child(5) {
+        grid-row: 2;
+        grid-column: 3;
+    }
+    .feature-element:nth-child(6) {
+        grid-row: 2;
+        grid-column: 2;
     }
     .benefit {
         margin-top: 15%;
