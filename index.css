@@ -129,7 +129,6 @@ button {
 
 .container {
     margin-top: 40px;
-    margin-top: 12%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -155,8 +154,7 @@ button {
 }
 
 .brand {
-    margin-top: 60px;
-    margin-top: 15%;
+    margin-top: 50px;
     width: 95%;
 }
 
@@ -166,7 +164,6 @@ button {
 
 .brand-list {
     margin-top: 25px;
-    margin-top: 5%;
     display: flex;
     flex-wrap: wrap;
     gap: 1.5em;
@@ -178,7 +175,6 @@ button {
 
 .feature {
     margin-top: 80px;
-    margin-top: 15%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -212,10 +208,6 @@ button {
     left: 0;
     right: 0;
     width: 40%;
-}
-
-.feature-list {
-    margin-top: 2%;
 }
 
 .feature-element:first-child>.icon {
@@ -258,7 +250,7 @@ button {
 }
 
 .feature-element {
-    margin-top: 70px;
+    margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
     display: grid;
@@ -270,9 +262,8 @@ button {
 }
 
 .benefit {
-    margin-top: 150px;
-    margin-top: 20%;
-    margin-bottom: 8%;
+    margin-top: 120px;
+    margin-bottom: 40px;
     text-align: center;
 }
 
@@ -284,7 +275,6 @@ iframe {
 
 .benefit-detail {
     margin-top: 10px;
-    margin-top: 5%;
 }
 
 .benefit-detail>h2 {
@@ -296,7 +286,7 @@ iframe {
 }
 
 form {
-    margin-top: 40px;
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -389,6 +379,7 @@ form>button:hover {
         text-align: center;
     }
     .brand {
+        margin-top: 60px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -402,6 +393,7 @@ form>button:hover {
         margin: 0 auto;
     }
     .feature {
+        margin-top: 100px;
         display: flex;
         flex-direction: column;
     }
@@ -409,6 +401,7 @@ form>button:hover {
         width: 500px;
     }
     .feature-list {
+        margin-top: 20px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
@@ -440,12 +433,18 @@ form>button:hover {
         grid-column: 2;
     }
     .benefit {
+        margin-top: 135px;
+        margin-bottom: 60px;
         width: 85%;
+    }
+    .benefit-detail {
+        margin-top: 30px;
     }
     .benefit-detail>p {
         width: 400px;
     }
     form {
+        margin-top: 40px;
         flex-flow: row nowrap;
         justify-content: center;
     }
@@ -472,7 +471,7 @@ form>button:hover {
         justify-content: space-between;
     }
     .intro {
-        margin-top: 3%;
+        margin-top: 120px;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
@@ -492,7 +491,7 @@ form>button:hover {
         text-align: start;
     }
     .brand {
-        margin-top: 6%;
+        margin-top: 100px;
         flex-flow: row nowrap;
         align-items: start;
         justify-content: space-between;
@@ -504,6 +503,9 @@ form>button:hover {
         margin: 0 0;
         width: 70%;
         flex-flow: row nowrap;
+    }
+    .feature {
+        margin-top: 130px;
     }
     .feature-list {
         grid-template-columns: repeat(3, 1fr);
@@ -531,7 +533,7 @@ form>button:hover {
         grid-column: 2;
     }
     .benefit {
-        margin-top: 15%;
+        margin-top: 160px;
         display: flex;
         width: 100%;
         justify-content: space-evenly;
