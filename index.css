@@ -406,6 +406,7 @@ form>button:hover {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
         align-items: start;
+        justify-items: center;
         column-gap: 5%;
     }
     .feature-element {
@@ -471,7 +472,7 @@ form>button:hover {
         justify-content: space-between;
     }
     .intro {
-        margin-top: 120px;
+        margin-top: 10%;
         width: 85%;
         display: flex;
         align-items: center;
@@ -513,6 +514,7 @@ form>button:hover {
         width: 85%;
     }
     .feature-list {
+        width: 100%;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
         column-gap: 3%;
@@ -566,11 +568,12 @@ form>button:hover {
     form {
         margin-top: 5%;
         justify-content: start;
+        width: 100%;
     }
     form>input {
-        width: 20em;
+        width: 23em;
     }
     form>button {
-        min-width: 12em;
+        width: 12em;
     }
 }
